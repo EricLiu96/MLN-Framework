@@ -24,26 +24,6 @@ layer_dims = [num0, num1, num2]
 #### Linear Forward
 The linear forward module (vectorized over all the examples) computes the following equations:
 
-<math display="block">
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>Z</mi><mfenced open="[" close="]"><mi>l</mi></mfenced></msup><mo>=</mo><msup><mi>W</mi><mfenced open="[" close="]"><mi>l</mi></mfenced></msup><msup><mi>A</mi><mfenced open="[" close="]"><mrow><mi>l</mi><mo>-</mo><mn>1</mn></mrow></mfenced></msup><mo>+</mo><msup><mi>b</mi><mfenced open="[" close="]"><mi>l</mi></mfenced></msup></math>
-</math>
+$$Z^{[l]} = W^{[l]}A^{[l-1]} + b^{[l-1]}$$
 
-where <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>A</mi><mrow><mo>[</mo><mn>0</mn><mo>]</mo></mrow></msup><mo>=</mo><mi>X</mi></math>.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+where $A^{[0]} = X$
