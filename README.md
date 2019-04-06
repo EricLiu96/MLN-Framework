@@ -57,7 +57,7 @@ We apply chain rule to calculate the derivative.
 
 Calculating it step by step, for a specific score with index $i$, 
 
-$\frac{\partial E}{\partial Z^{L}_{i}} = \sum_{j}(\frac{\partial E}{\partial A^{L}_{j}})(\frac{\partial A^{L}_{j}}{\partial Z^{L}_{i}}) = (\frac{\partial E}{\partial A^{L}_{i}})(\frac{\partial A^{L}_{i}}{\partial Z^{L}_{i}})$
+$\frac{\partial E}{\partial Z^{L}_{i}}$ = $\sum_{j}(\frac{\partial E}{\partial A^{L}_{j}})(\frac{\partial A^{L}_{j}}{\partial Z^{L}_{i}}) = (\frac{\partial E}{\partial A^{L}_{i}})(\frac{\partial A^{L}_{i}}{\partial Z^{L}_{i}})$
 
 Considering about $\frac{\partial E}{\partial A^{L}_{i}}$ first, 
 
