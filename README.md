@@ -56,6 +56,7 @@ We apply chain rule to calculate the derivative.
 ![chain-rule-for-cross-entropy1](https://i1.wp.com/sefiks.com/wp-content/uploads/2017/12/chain-rule-for-cross-entrophy-v21.png?zoom=2&resize=665%2C458&ssl=1)
 
 Calculating it step by step, for a specific score with index $i$, 
+
 $$\frac{\partial E}{\partial Z^{L}_{i}} = \sum_{j}(\frac{\partial E}{\partial A^{L}_{j}})(\frac{\partial A^{L}_{j}}{\partial Z^{L}_{i}}) = (\frac{\partial E}{\partial A^{L}_{i}})(\frac{\partial A^{L}_{i}}{\partial Z^{L}_{i}})$$
 
 Considering about $\frac{\partial E}{\partial A^{L}_{i}}$ first, 
