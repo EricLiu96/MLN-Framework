@@ -37,7 +37,7 @@ where $A^{[0]} = X$. After linear forward part, we should take it through activa
 After iterating these two parts $L$ times, we can get the final result of our neural network.
 
 * input **X, self**
-* return **A^{L}**
+* return **$A^{L}$**
 
 ### [Cross Entropy Error Function](https://sefiks.com/2017/12/17/a-gentle-introduction-to-cross-entropy-loss-function/)
 
@@ -57,7 +57,7 @@ We apply chain rule to calculate the derivative.
 
 Calculating it step by step, for a specific score with index $i$, 
 
-$$\frac{\partial E}{\partial Z^{L}_{i}} = \sum_{j}(\frac{\partial E}{\partial A^{L}_{j}})(\frac{\partial A^{L}_{j}}{\partial Z^{L}_{i}}) = (\frac{\partial E}{\partial A^{L}_{i}})(\frac{\partial A^{L}_{i}}{\partial Z^{L}_{i}})$$
+$\frac{\partial E}{\partial Z^{L}_{i}} = \sum_{j}(\frac{\partial E}{\partial A^{L}_{j}})(\frac{\partial A^{L}_{j}}{\partial Z^{L}_{i}}) = (\frac{\partial E}{\partial A^{L}_{i}})(\frac{\partial A^{L}_{i}}{\partial Z^{L}_{i}})$
 
 Considering about $\frac{\partial E}{\partial A^{L}_{i}}$ first, 
 
