@@ -49,11 +49,9 @@ Where $c_{i}$ is the lable for class $i$, and $A^{L}_{i}$ is the prediction of p
 
 Notice that we would apply softmax to calculated neural network scores($Z^{L}$) and predict out probabilities first. Cross entropy is applied to softmax applied probabilities and one hot encoded classes calculated second. That’s why, we need to calculate the derivative of total error with respect to the each score.  
 
-![chain-rule-for-cross-entropy1](https://i1.wp.com/sefiks.com/wp-content/uploads/2017/12/chain-rule-for-cross-entrophy-v11.png?zoom=2&resize=665%2C435&ssl=1)
 
 We apply chain rule to calculate the derivative.
 
-![chain-rule-for-cross-entropy1](https://i1.wp.com/sefiks.com/wp-content/uploads/2017/12/chain-rule-for-cross-entrophy-v21.png?zoom=2&resize=665%2C458&ssl=1)
 
 Calculating it step by step, for a specific score with index $i$, 
 
