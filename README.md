@@ -1,13 +1,13 @@
 # MLP-Framework
-This is a step-by-step multi-layers perceptrons neural network tutorial. We use python as our language.
+This is a step-by-step multi-layers perceptrons neural network tutorial. We use python3 as our language.
 ## Introduction
 ### Necessary Packages 
 * [numpy](http://www.numpy.org/) is the main package for scientific computing with Python. 
 * [matplotlib](http://matplotlib.org) is a library to plot graphs in Python.
 * [scipy](https://www.scipy.org/) is the SciPy package of key algorithms and functions core to Python's scientific computing capabilities. 
 
-### Tutorial for load_mnist.py
-loading...
+### Helper.pdf
+Helper.pdf is a mathematics description of MLP neural network framework.
 
 ## Outline of Framework
 We hope to build a **MLP** class to denote our network. Following 
@@ -25,10 +25,8 @@ layer_dims = [num0, num1, num2]
 ```
 * set **weights** and **bias** for each layers, where wl has shape (layer_dims[l] * layer_dims[l-1]) ,and bl has shape (layer_dims[l],1).   
 
-### Linear Forward Module
-This function will compute out the result of our neural network. 
-
-After iterating linear forward module and activation **L** times, we can get the final result of our neural network.
+### Linear Forward Activation Module
+Inputting train set **X**, This function will calculate out the result of our neural network via self weights and bias and activation function iterating **L** times. 
 
 * input **X, self**
 * return **AL**
@@ -48,5 +46,15 @@ If you want to look at the detailed explanation of , please click [here](http://
 ### Mini-bach Stochastic Gradient Descent
 
 ### Update Function
+
+## Program Tutorial
+
+### load_mnist.py
+Uploading .mat file into python3 environment by 
+
+```
+import load_mnist
+train_set, train_results, test_set, test_results = load_mnist.load_data()
+```
 
 
