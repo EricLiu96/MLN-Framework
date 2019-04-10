@@ -26,10 +26,12 @@ def load_data():
         train_set_beta.append(x['train' + str(i)])
         train_results += [vectorized_result(i)] * x['train'+str(i)].shape[0]
     train_set_beta = np.concatenate(train_set_beta)
+    train_set_beta = train_set_beta/255.
     for i in range(10):
-        test_set_beta.append(x['train' + str(i)])
+        test_set_beta.append(x['test' + str(i)])
         test_results += [vectorized_result(i)] * x['test'+str(i)].shape[0]
     test_set_beta = np.concatenate(test_set_beta)
+    test_set_beta = test_set_beta/255.
 
     for i in range(train_set_beta.shape[0]):
         temp = np.asarray(train_set_beta[i])
